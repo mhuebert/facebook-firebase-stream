@@ -13,8 +13,12 @@ app.use bodyParser.urlencoded(extended: true)
 # env = require('node-env-file')
 # env('./.env')
 
-F = new Firebase(process.env.fire_url)
-F.auth(process.env.firebase_secret)
+Firebase = new Firebase(process.env.fire_url)
+Firebase.auth(process.env.firebase_secret)
+
+s = Firebase.child("logs/-JTFX70fODLRrTjf-lzu")
+s.on "value", (s) ->
+  console.log JSON.stringify denormalize(s.val()), null, 4
 
 # REQUIRED - respond to Facebook's verification GET request
 app.get "/webhooks/page-feed", (req, res) ->
@@ -31,8 +35,10 @@ app.post "/webhooks/page-feed", (req, res) ->
     console.log item
     # Only save new posts (not comments, or changes to old posts)
     if item.verb == "add" and item.hasOwnProperty("post_id")
+      # Items are sorted by key. We want descending order by time,
+      # along with a hash of the item itself, so that we never add the same item twice.
       time = 10000000000 - parseInt item["__time"]
-      F.child("stream/#{time+hash.MD5(item)}").update(item)
+      Firebase.child("stream/#{time+hash.MD5(item)}").update(item)
   res.send "Thanks", 200
 
 
