@@ -5,7 +5,6 @@ url = require('url')
 bodyParser = require('body-parser')
 app = express()
 app.use( bodyParser.json() )
-app.use( bodyParser.urlencoded() )
 # For process.env variables with a REPL:
 # env = require('node-env-file')
 # env('./.env')
