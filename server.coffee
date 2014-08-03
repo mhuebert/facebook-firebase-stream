@@ -42,6 +42,8 @@ app.get "/", (req, res) ->
   res.send "<h1>Stats:</h1><p>TBC</p>"
 
 
+app.listen(process.env.PORT || 3000)
+
 # F.child("logs").on "child_added", (snap) ->
 #   for item in denormalize(snap.val())
 #     # Filter: must be a new post
