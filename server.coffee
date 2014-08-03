@@ -1,4 +1,5 @@
 Firebase = require("firebase")
+{denormalize} = require("./utils")
 hash = require('object-hash')
 express = require("express")
 url = require('url')
