@@ -1,4 +1,4 @@
-@extend = (destination, objects...) ->
+extend = (destination, objects...) ->
   for object in objects
     for key, value of object
       destination[key] = value

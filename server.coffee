@@ -1,6 +1,5 @@
 Firebase = require("firebase")
 hash = require('object-hash')
-{extend, denormalize} = require("./utils")
 express = require("express")
 url = require('url')
 bodyParser = require('body-parser')
