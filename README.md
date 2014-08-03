@@ -52,10 +52,10 @@ An underscore prefix on a field denotes that it was inherited from a parent leve
 
 ### Notes
 
-1. if you adapt this for your own purposes, you'll want to remove the line:
+* if you adapt this for your own purposes, you'll want to remove the line:
 
-```if item.verb == "add" and item.hasOwnProperty("post_id")```
+    ```if item.verb == "add" and item.hasOwnProperty("post_id")```
 
 (Or modify it to suit your own needs - FB's real-time update API isn't very granular, so there's a good chance you won't want to keep everything they send.)
 
-2. I've only used this with a "feed" subscription - I'm not sure what other subscription payloads look like.
+* I've only used this with a "feed" subscription - I'm not sure what other subscription payloads look like.
