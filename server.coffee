@@ -19,10 +19,12 @@ app.get "/webhooks/page-feed", (req, res) ->
     console.log "Invalid verify_token from Facebook"
     res.send "Incorrect token", 400
     return
-  return query["hub.challenge"]
+  res.send query["hub.challenge"]
 
 app.post "/webhooks/page-feed", (req, res) ->
+  console.log req.body
   for item in denormalize(req.body)
+    console.log item
     # Only save new posts (not comments, or changes to old posts)
     if item.verb == "add" and item.hasOwnProperty("post_id")
       time = 10000000000 - parseInt item["__time"]
