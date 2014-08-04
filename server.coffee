@@ -46,7 +46,7 @@ app.get "user-support", (req, res) ->
 app.get "privacy-policy", (req, res) ->
   res.status(200).send "PRIVACY POLICY<br><br>This is an internal tool that will only be used with our own Facebook page. We promise not to violate our own privacy by doing bad things with our own data."
 
-app.match "/", (req, res) ->
+app.all "/", (req, res) ->
   res.status(200).send "<h1>Stats:</h1><p>TBC</p>"
 
 app.listen(process.env.PORT || 3000)
