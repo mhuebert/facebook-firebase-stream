@@ -16,10 +16,6 @@ app.use bodyParser.urlencoded(extended: true)
 Firebase = new Firebase(process.env.fire_url)
 Firebase.auth(process.env.firebase_secret)
 
-s = Firebase.child("logs/-JTFX70fODLRrTjf-lzu")
-s.on "value", (s) ->
-  console.log JSON.stringify denormalize(s.val()), null, 4
-
 # REQUIRED - respond to Facebook's verification GET request
 app.get "/webhooks/page-feed", (req, res) ->
   query = url.parse(req.url, true).query
@@ -31,6 +27,7 @@ app.get "/webhooks/page-feed", (req, res) ->
 
 # Receive updates from Facebook
 app.post "/webhooks/page-feed", (req, res) ->
+  res.send "Thanks", 200
   for item in denormalize(req.body)
     console.log item
     # Only save new posts (not comments, or changes to old posts)
@@ -39,7 +36,7 @@ app.post "/webhooks/page-feed", (req, res) ->
       # along with a hash of the item itself, so that we never add the same item twice.
       time = 10000000000 - parseInt item["__time"]
       Firebase.child("stream/#{time+hash.MD5(item)}").update(item)
-  res.send "Thanks", 200
+  
 
 
 # A series of useless pages required for Facebook's app approval process
@@ -49,7 +46,7 @@ app.get "user-support", (req, res) ->
 app.get "privacy-policy", (req, res) ->
   res.status(200).send "PRIVACY POLICY<br><br>This is an internal tool that will only be used with our own Facebook page. We promise not to violate our own privacy by doing bad things with our own data."
 
-app.get "/", (req, res) ->
+app.match "/", (req, res) ->
   res.status(200).send "<h1>Stats:</h1><p>TBC</p>"
 
 app.listen(process.env.PORT || 3000)
