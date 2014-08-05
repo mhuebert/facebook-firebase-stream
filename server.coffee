@@ -27,7 +27,6 @@ app.get "/webhooks/page-feed", (req, res) ->
 
 # Receive updates from Facebook
 app.post "/webhooks/page-feed", (req, res) ->
-  res.send "Thanks", 200
   for item in denormalize(req.body)
     console.log item
     # Only save new posts (not comments, or changes to old posts)
@@ -36,6 +35,7 @@ app.post "/webhooks/page-feed", (req, res) ->
       # along with a hash of the item itself, so that we never add the same item twice.
       time = 10000000000 - parseInt item["__time"]
       Firebase.child("stream/#{time+hash.MD5(item)}").update(item)
+  res.status(200).send "Thanks"
   
 
 
