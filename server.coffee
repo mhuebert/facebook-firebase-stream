@@ -7,10 +7,13 @@ bodyParser = require('body-parser')
 
 app = express()
 app.use (req, res, next) ->
-  console.log req
+  console.log "app just started"
+  # console.log req
+
   next()
 app.use bodyParser.json()
 # app.use bodyParser.urlencoded(extended: true)
+
 app.use (req, res, next) ->
   console.log "after bodyParser"
   next()
@@ -28,7 +31,6 @@ Firebase.auth(process.env.firebase_secret)
 app.post "/webhooks/page-feed", (req, res) ->
   console.log "received update from FB"
   console.log items = flatten(req.body)
-  console.log "finished flatten"
   for item in flatten(req.body)
     # Only save new posts (not comments, or changes to old posts)
     if item.verb == "add" and item.hasOwnProperty("post_id")
