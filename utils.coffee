@@ -4,7 +4,7 @@ extend = (destination, objects...) ->
       destination[key] = value
   return 
 
-@denormalize = (stream) ->
+@flatten = (stream) ->
   updates = []
   for changesContainer in stream.entry
     add1 = {}
