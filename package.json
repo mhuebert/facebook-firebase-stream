@@ -15,6 +15,9 @@
     "object-hash": "^0.3.0",
     "express": "^4.7.4",
     "coffee-script": "^1.7.1",
-    "body-parser": "^1.5.2"
+    "body-parser": "^1.5.2",
+    "connect": "^3.1.0",
+    "morgan": "^1.2.2",
+    "method-override": "^2.1.2"
   }
 }
