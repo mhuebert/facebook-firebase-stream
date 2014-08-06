@@ -40,8 +40,10 @@ app.post "/webhooks/page-feed", (req, res) ->
           console.log "Error", err
           return
         res.status(200).send "Thanks"
+        return
     else
       res.status(200).send "Thanks"
+      return
 # REQUIRED - respond to Facebook's verification GET request
 app.get "/webhooks/page-feed", (req, res) ->
   query = url.parse(req.url, true).query
