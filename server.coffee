@@ -6,7 +6,7 @@ bodyParser = require('body-parser')
 methodOverride = require("method-override")
 {flatten} = require("./utils")
 morgan = require("morgan")
-
+_ = require("underscore")
 
 # For process.env variables with a REPL:
 # env = require('node-env-file')
@@ -24,26 +24,19 @@ app.use bodyParser.json()
 
 # Receive updates from Facebook
 app.post "/webhooks/page-feed", (req, res) ->
-  items = flatten(req.body)
+  items = _(flatten(req.body)).filter (item) ->
+    item.verb == "add" and item.hasOwnProperty("post_id") and !item.hasOwnProperty("comment_id")
   if items.length == 0
     res.status(200).send "Thanks"
     return
   for item in items
-    # Only save new posts (not comments, or changes to old posts)
-    if item.verb == "add" and item.hasOwnProperty("post_id") and !item.hasOwnProperty("comment_id")
-      # Items are sorted by key. We want descending order by time,
-      # along with a hash of the item itself, so that we never add the same item twice.
+    do (item) ->
       time = 10000000000 - parseInt item["__time"]
       Firebase.child("stream/#{time+hash.MD5(item)}").update item, (err) ->
         if err
-          res.status(500).send "Error"
-          console.log "Error", err
-          return
-        res.status(200).send "Thanks"
-        return
-    else
-      res.status(200).send "Thanks"
-      return
+          console.log "ERROR: err updating item", err, item
+  res.status(200).send "Thanks"
+  return
 # REQUIRED - respond to Facebook's verification GET request
 app.get "/webhooks/page-feed", (req, res) ->
   query = url.parse(req.url, true).query
