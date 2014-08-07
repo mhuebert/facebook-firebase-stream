@@ -2,7 +2,7 @@
 
 A single-purpose server that listens for updates from Facebook's [Real-Time API](https://developers.facebook.com/docs/graph-api/real-time-updates/v2.0), transforms the update into something manageable, and saves them into Firebase, sorted in descending order by time.
 
-## Denormalization
+## Flattening the stream
 
 A single event from Facebook's real-time API looks like this:
 
@@ -31,7 +31,7 @@ A single event from Facebook's real-time API looks like this:
 
 Multiple objects may be present at varying levels of the hierarchy.
 
-After denormalization, the same update looks like:
+The same, flattened update looks like:
 
 ```(js)
 {
