@@ -25,7 +25,7 @@ app.use bodyParser.json()
 # Receive updates from Facebook
 app.post "/webhooks/page-feed", (req, res) ->
   items = _(flatten(req.body)).filter (item) ->
-    item.verb == "add" and item.hasOwnProperty("post_id") and !item.hasOwnProperty("comment_id")
+    item.verb == "add" and item.hasOwnProperty("post_id") and !item.hasOwnProperty("comment_id") and item.item != "photo"
   if items.length == 0
     res.status(200).send "Thanks"
     return
