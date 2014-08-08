@@ -31,7 +31,7 @@ app.post "/webhooks/page-feed", (req, res) ->
     return
   for item in items
     do (item) ->
-      time = 10000000000 - parseInt item["__time"]
+      time = parseInt item["__time"]
       Firebase.child("stream/#{time+hash.MD5(item)}").update item, (err) ->
         if err
           console.log "ERROR: err updating item", err, item
