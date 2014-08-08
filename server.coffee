@@ -7,6 +7,7 @@ methodOverride = require("method-override")
 {flatten} = require("./utils")
 morgan = require("morgan")
 _ = require("underscore")
+require("./ping")
 
 # For process.env variables with a REPL:
 # env = require('node-env-file')
@@ -15,6 +16,7 @@ _ = require("underscore")
 
 Firebase = new Firebase(process.env.fire_url)
 Firebase.auth(process.env.firebase_secret)
+
 
 app = express()
 app.use morgan('dev')

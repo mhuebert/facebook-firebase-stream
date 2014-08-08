@@ -1,0 +1,427 @@
+2014-08-06T17:52:34.375327+00:00 heroku[api]: Enable Logplex by sparkboard@matt.is
+2014-08-06T17:52:34.375409+00:00 heroku[api]: Release v2 created by sparkboard@matt.is
+2014-08-06T17:52:46+00:00 heroku[slug-compiler]: Slug compilation started
+2014-08-06T17:53:00.911060+00:00 heroku[api]: Scale to web=1 by sparkboard@matt.is
+2014-08-06T17:53:01+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-08-06T17:53:04.599828+00:00 app[web.1]:   at Error (<anonymous>:null:null)
+2014-08-06T17:53:04.599830+00:00 app[web.1]:   at D.E (/app/node_modules/firebase/lib/firebase-node.js:143:172)
+2014-08-06T17:53:04.599809+00:00 app[web.1]: Error: new Firebase failed: First argument must be a valid firebase URL and the path can't contain ".", "#", "$", "[", or "]".
+2014-08-06T17:53:04.599833+00:00 app[web.1]:   at Object.<anonymous> (/app/server.coffee:1:1)
+2014-08-06T17:53:04.599832+00:00 app[web.1]:   at Object.<anonymous> (/app/server.coffee:16:16)
+2014-08-06T17:53:04.599835+00:00 app[web.1]:   at Module._compile (module.js:456:26)
+2014-08-06T17:53:04.599837+00:00 app[web.1]: 
+2014-08-06T17:53:05.758138+00:00 heroku[web.1]: State changed from starting to crashed
+2014-08-06T17:53:05.777424+00:00 heroku[web.1]: State changed from crashed to starting
+2014-08-06T17:53:01.051010+00:00 heroku[api]: Deploy f7930ab by sparkboard@matt.is
+2014-08-06T17:53:01.051084+00:00 heroku[api]: Release v3 created by sparkboard@matt.is
+2014-08-06T17:53:03.238995+00:00 heroku[web.1]: Starting process with command `coffee server.coffee`
+2014-08-06T17:53:05.747911+00:00 heroku[web.1]: Process exited with status 1
+2014-08-06T17:53:08.540498+00:00 heroku[web.1]: Starting process with command `coffee server.coffee`
+2014-08-06T17:53:09.828521+00:00 app[web.1]:   at D.E (/app/node_modules/firebase/lib/firebase-node.js:143:172)
+2014-08-06T17:53:09.828527+00:00 app[web.1]: 
+2014-08-06T17:53:09.828498+00:00 app[web.1]: Error: new Firebase failed: First argument must be a valid firebase URL and the path can't contain ".", "#", "$", "[", or "]".
+2014-08-06T17:53:09.828522+00:00 app[web.1]:   at Object.<anonymous> (/app/server.coffee:16:16)
+2014-08-06T17:53:09.828525+00:00 app[web.1]:   at Module._compile (module.js:456:26)
+2014-08-06T17:53:09.828524+00:00 app[web.1]:   at Object.<anonymous> (/app/server.coffee:1:1)
+2014-08-06T17:53:09.828518+00:00 app[web.1]:   at Error (<anonymous>:null:null)
+2014-08-06T17:53:11.144691+00:00 heroku[web.1]: State changed from starting to crashed
+2014-08-06T17:53:13.131743+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=jpg-facebook-stream.herokuapp.com request_id=249de156-2463-4df9-b3dd-c947d1d9a1f3 fwd="54.83.191.119" dyno= connect= service= status=503 bytes=
+2014-08-06T17:53:11.134039+00:00 heroku[web.1]: Process exited with status 1
+2014-08-06T17:54:16.981366+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=internetmirror.herokuapp.com request_id=56397bb3-778b-4721-a789-32c599b209e7 fwd="74.212.183.186" dyno= connect= service= status=503 bytes=
+2014-08-06T17:54:58.870583+00:00 heroku[web.1]: State changed from crashed to starting
+2014-08-06T17:54:58.481271+00:00 heroku[api]: Set fire_url config vars by sparkboard@matt.is
+2014-08-06T17:54:58.481350+00:00 heroku[api]: Release v4 created by sparkboard@matt.is
+2014-08-06T17:55:02.615202+00:00 app[web.1]:   at Error (<anonymous>:null:null)
+2014-08-06T17:55:02.615210+00:00 app[web.1]: 
+2014-08-06T17:55:02.615183+00:00 app[web.1]: Error: Firebase.auth failed: First argument must be a valid credential (a string).
+2014-08-06T17:55:02.615204+00:00 app[web.1]:   at D.E.lb (/app/node_modules/firebase/lib/firebase-node.js:154:302)
+2014-08-06T17:55:02.615207+00:00 app[web.1]:   at Object.<anonymous> (/app/server.coffee:1:1)
+2014-08-06T17:55:02.615208+00:00 app[web.1]:   at Module._compile (module.js:456:26)
+2014-08-06T17:55:02.615205+00:00 app[web.1]:   at Object.<anonymous> (/app/server.coffee:17:10)
+2014-08-06T17:55:03.974120+00:00 heroku[web.1]: State changed from starting to crashed
+2014-08-06T17:55:00.767953+00:00 heroku[web.1]: Starting process with command `coffee server.coffee`
+2014-08-06T17:55:03.963361+00:00 heroku[web.1]: Process exited with status 1
+2014-08-06T17:55:25.966426+00:00 heroku[web.1]: State changed from crashed to starting
+2014-08-06T17:55:25.781079+00:00 heroku[api]: Release v5 created by sparkboard@matt.is
+2014-08-06T17:55:25.781079+00:00 heroku[api]: Set firebase_secret config vars by sparkboard@matt.is
+2014-08-06T17:55:29.690464+00:00 heroku[web.1]: State changed from starting to up
+2014-08-06T17:55:27.779032+00:00 heroku[web.1]: Starting process with command `coffee server.coffee`
+2014-08-06T17:55:58.200090+00:00 heroku[web.1]: State changed from up to starting
+2014-08-06T17:55:59.737527+00:00 heroku[web.1]: Starting process with command `coffee server.coffee`
+2014-08-06T17:55:57.926631+00:00 heroku[api]: Set verify_token config vars by sparkboard@matt.is
+2014-08-06T17:55:57.926779+00:00 heroku[api]: Release v6 created by sparkboard@matt.is
+2014-08-06T17:56:02.868045+00:00 heroku[router]: at=info method=GET path="/" host=internetmirror.herokuapp.com request_id=59165115-095e-46f6-be6f-226eee2c4bbd fwd="74.212.183.186" dyno=web.1 connect=0ms service=10ms status=200 bytes=607
+2014-08-06T17:56:01.435163+00:00 heroku[web.1]: State changed from starting to up
+2014-08-06T17:56:02.864308+00:00 app[web.1]: [0mGET / [32m200 [0m6.263 ms - 22[0m
+2014-08-06T17:56:01.836234+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-08-06T17:56:05.905821+00:00 heroku[web.1]: Process exited with status 143
+2014-08-06T17:57:14.411604+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=e33e20d5-7142-4524-ba95-a46aeab180fb fwd="173.252.77.116" dyno=web.1 connect=1ms service=48ms status=200 bytes=710
+2014-08-06T17:57:14.408086+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m45.144 ms - 6[0m
+2014-08-06T17:58:56.194936+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=841e4277-86bf-45a5-96f2-974d6253e26f fwd="173.252.69.119" dyno=web.1 connect=1ms service=75ms status=200 bytes=708
+2014-08-06T17:58:56.190820+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m71.704 ms - 6[0m
+2014-08-06T17:59:26.253728+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=e5e96528-f036-4017-9d68-f14499513f33 fwd="173.252.77.112" dyno=web.1 connect=1ms service=2ms status=200 bytes=966
+2014-08-06T17:59:26.252239+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.328 ms - 6[0m
+2014-08-06T17:59:32.304710+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=8040272c-c850-41cc-a5f7-91a058190934 fwd="173.252.77.113" dyno=web.1 connect=0ms service=2ms status=200 bytes=966
+2014-08-06T17:59:32.303184+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.119 ms - 6[0m
+2014-08-06T19:03:03.469415+00:00 heroku[web.1]: State changed from up to down
+2014-08-06T19:03:03.469018+00:00 heroku[web.1]: Idling
+2014-08-06T19:03:07.038299+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-08-06T19:03:09.468116+00:00 heroku[web.1]: Process exited with status 143
+2014-08-06T19:16:20.546017+00:00 heroku[web.1]: State changed from down to starting
+2014-08-06T19:16:20.545774+00:00 heroku[web.1]: Unidling
+2014-08-06T19:16:26.607147+00:00 heroku[router]: at=info method=GET path="/" host=internetmirror.herokuapp.com request_id=e95fb4f5-b40b-4085-bfc9-e27d2912de94 fwd="74.212.183.186" dyno=web.1 connect=2ms service=13ms status=304 bytes=615
+2014-08-06T19:16:26.655882+00:00 heroku[router]: at=info method=GET path="/" host=internetmirror.herokuapp.com request_id=8d0ec622-d1c4-4d82-a28e-4c1ac3ea639c fwd="74.212.183.186" dyno=web.1 connect=2ms service=4ms status=200 bytes=581
+2014-08-06T19:16:25.582220+00:00 heroku[web.1]: State changed from starting to up
+2014-08-06T19:16:26.611780+00:00 app[web.1]: [0mGET / [36m304 [0m7.071 ms - -[0m
+2014-08-06T19:16:26.657409+00:00 app[web.1]: [0mGET / [32m200 [0m1.543 ms - 22[0m
+2014-08-06T19:16:22.597335+00:00 heroku[web.1]: Starting process with command `coffee server.coffee`
+2014-08-06T19:16:38.581886+00:00 heroku[router]: at=info method=GET path="/" host=internetmirror.herokuapp.com request_id=662e0b23-7dad-4031-a983-8bf87a03110e fwd="74.212.183.186" dyno=web.1 connect=5ms service=6ms status=200 bytes=578
+2014-08-06T19:16:38.577647+00:00 app[web.1]: [0mGET / [32m200 [0m1.181 ms - 22[0m
+2014-08-06T19:16:43.563387+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=b9579dec-a65b-451f-82e5-9a1dd37b30b3 fwd="173.252.77.117" dyno=web.1 connect=1ms service=201ms status=200 bytes=708
+2014-08-06T19:16:43.569607+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m199.311 ms - 6[0m
+2014-08-06T19:17:48.228209+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=18a50941-46ba-491b-a9b0-204441148f33 fwd="173.252.77.116" dyno=web.1 connect=1ms service=9ms status=200 bytes=966
+2014-08-06T19:17:48.230612+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.774 ms - 6[0m
+2014-08-06T19:17:49.950999+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=9fd8c753-35d4-473e-8d2b-4d9556e15378 fwd="173.252.77.114" dyno=web.1 connect=1ms service=4ms status=200 bytes=966
+2014-08-06T19:17:49.956056+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m0.979 ms - 6[0m
+2014-08-06T20:11:35.975318+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=69114063-1753-4eb1-af8c-f9b6ca073248 fwd="173.252.77.118" dyno=web.1 connect=1ms service=30001ms status=503 bytes=708
+2014-08-06T20:20:40.330009+00:00 heroku[web.1]: Idling
+2014-08-06T20:20:40.330430+00:00 heroku[web.1]: State changed from up to down
+2014-08-06T20:20:44.392715+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-08-06T20:20:46.732246+00:00 heroku[web.1]: Process exited with status 143
+2014-08-06T21:40:06.100171+00:00 heroku[web.1]: Unidling
+2014-08-06T21:40:06.100613+00:00 heroku[web.1]: State changed from down to starting
+2014-08-06T21:40:09.559595+00:00 heroku[web.1]: State changed from starting to up
+2014-08-06T21:40:11.276529+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=b96de24b-1c25-4806-b1f8-dfe05d1cba71 fwd="173.252.69.115" dyno=web.1 connect=1ms service=109ms status=200 bytes=711
+2014-08-06T21:40:11.271439+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m103.377 ms - 6[0m
+2014-08-06T21:40:07.692873+00:00 heroku[web.1]: Starting process with command `coffee server.coffee`
+2014-08-06T21:41:14.487447+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=e0529d89-dbfa-4c5d-a1c2-49f589d28188 fwd="173.252.69.119" dyno=web.1 connect=1ms service=58ms status=200 bytes=708
+2014-08-06T21:41:14.486990+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m54.277 ms - 6[0m
+2014-08-06T21:42:58.379114+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=862c2867-8ae9-417f-989d-a1541d173506 fwd="173.252.69.115" dyno=web.1 connect=16ms service=83ms status=200 bytes=710
+2014-08-06T21:42:58.339261+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m62.434 ms - 6[0m
+2014-08-06T21:47:48.161851+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=e1177ed4-8053-4c11-9153-62ca5145cabe fwd="173.252.77.119" dyno=web.1 connect=5ms service=11ms status=200 bytes=966
+2014-08-06T21:47:48.157116+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m4.378 ms - 6[0m
+2014-08-06T21:47:49.252039+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=3251e70d-3cf0-43e8-b19e-b2f90c87e9ef fwd="173.252.77.118" dyno=web.1 connect=1ms service=5ms status=200 bytes=966
+2014-08-06T21:47:49.247612+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m2.612 ms - 6[0m
+2014-08-06T21:48:46.560326+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=0c1cc391-b304-462c-b7b9-c3566e6d50f6 fwd="173.252.69.114" dyno=web.1 connect=1ms service=54ms status=200 bytes=708
+2014-08-06T21:48:46.559561+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m52.256 ms - 6[0m
+2014-08-06T22:22:51.881255+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=76a8b15c-9f7a-4be3-a893-397f87ea5e98 fwd="173.252.77.119" dyno=web.1 connect=1ms service=30000ms status=503 bytes=708
+2014-08-06T22:49:46.761655+00:00 heroku[web.1]: Idling
+2014-08-06T22:49:46.761928+00:00 heroku[web.1]: State changed from up to down
+2014-08-06T22:49:50.508709+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-08-06T22:49:53.505230+00:00 heroku[web.1]: Process exited with status 143
+2014-08-07T14:27:38+00:00 heroku[slug-compiler]: Slug compilation started
+2014-08-07T14:27:43+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-08-07T14:27:43.498287+00:00 heroku[api]: Deploy 7e8e36c by sparkboard@matt.is
+2014-08-07T14:27:43.498369+00:00 heroku[api]: Release v7 created by sparkboard@matt.is
+2014-08-07T14:28:10.658871+00:00 heroku[web.1]: State changed from down to starting
+2014-08-07T14:28:10.658626+00:00 heroku[web.1]: Unidling
+2014-08-07T14:28:15.005496+00:00 heroku[web.1]: State changed from starting to up
+2014-08-07T14:28:15.905965+00:00 heroku[router]: at=info method=GET path="/" host=internetmirror.herokuapp.com request_id=7bfed1c4-9af1-4092-83cb-3ee24eea8d05 fwd="75.101.236.127" dyno=web.1 connect=27ms service=38ms status=200 bytes=406
+2014-08-07T14:28:15.876287+00:00 app[web.1]: [0mGET / [32m200 [0m17.418 ms - 22[0m
+2014-08-07T14:28:12.732574+00:00 heroku[web.1]: Starting process with command `coffee server.coffee`
+2014-08-07T15:34:04.176135+00:00 heroku[web.1]: Idling
+2014-08-07T15:34:04.177052+00:00 heroku[web.1]: State changed from up to down
+2014-08-07T15:34:08.277694+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-08-07T15:34:10.702212+00:00 heroku[web.1]: Process exited with status 143
+2014-08-07T15:43:14.940229+00:00 heroku[web.1]: State changed from down to starting
+2014-08-07T15:43:14.940229+00:00 heroku[web.1]: Unidling
+2014-08-07T15:43:18.457866+00:00 heroku[web.1]: State changed from starting to up
+2014-08-07T15:43:20.033156+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=2a73a8e9-ee56-429a-982b-bde4e011e4da fwd="173.252.77.119" dyno=web.1 connect=0ms service=53ms status=200 bytes=711
+2014-08-07T15:43:20.033626+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m49.104 ms - 6[0m
+2014-08-07T15:43:16.591209+00:00 heroku[web.1]: Starting process with command `coffee server.coffee`
+2014-08-07T16:46:29.460225+00:00 heroku[web.1]: Idling
+2014-08-07T16:46:29.461041+00:00 heroku[web.1]: State changed from up to down
+2014-08-07T16:46:32.309508+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-08-07T16:46:34.540303+00:00 heroku[web.1]: Process exited with status 143
+2014-08-07T17:05:41.892929+00:00 heroku[web.1]: Unidling
+2014-08-07T17:05:41.893188+00:00 heroku[web.1]: State changed from down to starting
+2014-08-07T17:05:47.034858+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=96d3a312-d07b-45ad-93b5-a5078d4e9f1c fwd="173.252.69.112" dyno=web.1 connect=2ms service=96ms status=200 bytes=1498
+2014-08-07T17:05:47.037464+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m90.986 ms - 6[0m
+2014-08-07T17:05:46.228968+00:00 heroku[web.1]: State changed from starting to up
+2014-08-07T17:05:43.870016+00:00 heroku[web.1]: Starting process with command `coffee server.coffee`
+2014-08-07T17:09:51.901584+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=83dc486e-9b9f-4728-bf9f-5374c763332d fwd="173.252.69.117" dyno=web.1 connect=1ms service=5ms status=200 bytes=1022
+2014-08-07T17:09:51.902693+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m2.844 ms - 6[0m
+2014-08-07T17:10:22.632829+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=9e6836cf-90b7-4400-b085-c63bba8a42b4 fwd="173.252.77.116" dyno=web.1 connect=1ms service=4ms status=200 bytes=966
+2014-08-07T17:10:22.630871+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.249 ms - 6[0m
+2014-08-07T17:11:34.721969+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=85f05ba3-9dab-42c7-9a98-0abdc2416aaa fwd="173.252.77.114" dyno=web.1 connect=2ms service=4ms status=200 bytes=1030
+2014-08-07T17:11:34.721860+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.492 ms - 6[0m
+2014-08-07T17:22:35.462665+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=663919c0-2961-479f-8e4b-f88e8cc782c4 fwd="173.252.77.112" dyno=web.1 connect=1ms service=3ms status=200 bytes=966
+2014-08-07T17:22:35.461652+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.535 ms - 6[0m
+2014-08-07T17:22:42.469479+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=1a93b00b-fe46-46f5-afc8-33cba8361834 fwd="173.252.69.117" dyno=web.1 connect=2ms service=3ms status=200 bytes=966
+2014-08-07T17:22:42.467746+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.500 ms - 6[0m
+2014-08-07T17:23:27.591264+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=72233096-cc89-41bb-b494-4374bcfe3c02 fwd="173.252.69.117" dyno=web.1 connect=1ms service=3ms status=200 bytes=762
+2014-08-07T17:23:27.594017+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m0.916 ms - 6[0m
+2014-08-07T17:23:33.111548+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=8c85e768-26af-4888-8f77-4f97a76c9ad2 fwd="173.252.69.119" dyno=web.1 connect=1ms service=3ms status=200 bytes=762
+2014-08-07T17:23:33.114304+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m3.619 ms - 6[0m
+2014-08-07T18:23:38.160303+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=59c33e4f-5d90-4ccc-b91d-b0316bfc4123 fwd="173.252.77.118" dyno=web.1 connect=1ms service=30001ms status=503 bytes=708
+2014-08-07T18:24:08.151016+00:00 heroku[web.1]: State changed from up to starting
+2014-08-07T18:24:10.048836+00:00 heroku[web.1]: Starting process with command `coffee server.coffee`
+2014-08-07T18:24:11.712884+00:00 heroku[web.1]: State changed from starting to up
+2014-08-07T18:24:13.182981+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=7ae32288-2db0-4902-b03f-935eabaa4472 fwd="173.252.77.113" dyno=web.1 connect=1ms service=7910ms status=503 bytes=708
+2014-08-07T18:24:12.182836+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-08-07T18:24:14.823617+00:00 heroku[web.1]: Process exited with status 143
+2014-08-07T18:28:05.976964+00:00 heroku[router]: at=info method=GET path="/" host=internetmirror.herokuapp.com request_id=79d12177-5137-4692-823e-fd8804479c70 fwd="74.212.183.186" dyno=web.1 connect=1ms service=17ms status=200 bytes=578
+2014-08-07T18:28:05.979872+00:00 app[web.1]: [0mGET / [32m200 [0m8.430 ms - 22[0m
+2014-08-07T18:28:07.696362+00:00 heroku[router]: at=info method=GET path="/" host=internetmirror.herokuapp.com request_id=5fedca62-9f20-4d93-b53e-ea2d0762eb62 fwd="74.212.183.186" dyno=web.1 connect=1ms service=10ms status=304 bytes=638
+2014-08-07T18:28:07.696957+00:00 app[web.1]: [0mGET / [36m304 [0m5.990 ms - -[0m
+2014-08-07T18:28:12.957082+00:00 heroku[router]: at=info method=GET path="/" host=internetmirror.herokuapp.com request_id=47aaee2c-4894-446d-bbb1-02aa3866bbce fwd="74.212.183.186" dyno=web.1 connect=6ms service=32ms status=304 bytes=638
+2014-08-07T18:28:13.180756+00:00 heroku[router]: at=info method=GET path="/" host=internetmirror.herokuapp.com request_id=ebb371c8-710a-4dcc-8730-bde39f4f3ef4 fwd="74.212.183.186" dyno=web.1 connect=1ms service=4ms status=304 bytes=638
+2014-08-07T18:28:12.953097+00:00 app[web.1]: [0mGET / [36m304 [0m1.548 ms - -[0m
+2014-08-07T18:28:13.410382+00:00 heroku[router]: at=info method=GET path="/" host=internetmirror.herokuapp.com request_id=f9b56f7a-9c22-4c44-92d7-4c2396566df9 fwd="74.212.183.186" dyno=web.1 connect=1ms service=2ms status=304 bytes=638
+2014-08-07T18:28:13.178859+00:00 app[web.1]: [0mGET / [36m304 [0m0.982 ms - -[0m
+2014-08-07T18:28:13.411701+00:00 app[web.1]: [0mGET / [36m304 [0m0.656 ms - -[0m
+2014-08-07T18:28:13.562631+00:00 heroku[router]: at=info method=GET path="/" host=internetmirror.herokuapp.com request_id=abde1b17-f318-4daa-a05e-95c239f83c67 fwd="74.212.183.186" dyno=web.1 connect=1ms service=2ms status=304 bytes=638
+2014-08-07T18:28:13.772913+00:00 heroku[router]: at=info method=GET path="/" host=internetmirror.herokuapp.com request_id=3764de16-d757-40bb-834a-5486f0433a84 fwd="74.212.183.186" dyno=web.1 connect=1ms service=2ms status=304 bytes=638
+2014-08-07T18:28:13.972729+00:00 heroku[router]: at=info method=GET path="/" host=internetmirror.herokuapp.com request_id=28cadca4-d52b-4685-8e0a-35ea2d9fb1fc fwd="74.212.183.186" dyno=web.1 connect=3ms service=3ms status=304 bytes=638
+2014-08-07T18:28:13.772434+00:00 app[web.1]: [0mGET / [36m304 [0m0.575 ms - -[0m
+2014-08-07T18:28:13.975200+00:00 app[web.1]: [0mGET / [36m304 [0m0.659 ms - -[0m
+2014-08-07T18:28:14.158705+00:00 heroku[router]: at=info method=GET path="/" host=internetmirror.herokuapp.com request_id=c5d3b897-2b2f-4b96-9588-bf95be0a29c0 fwd="74.212.183.186" dyno=web.1 connect=1ms service=4ms status=304 bytes=638
+2014-08-07T18:28:13.562980+00:00 app[web.1]: [0mGET / [36m304 [0m0.608 ms - -[0m
+2014-08-07T18:28:14.329055+00:00 heroku[router]: at=info method=GET path="/" host=internetmirror.herokuapp.com request_id=2db7fad0-593c-48a4-8e2e-f2ce07e6c7be fwd="74.212.183.186" dyno=web.1 connect=1ms service=2ms status=304 bytes=638
+2014-08-07T18:28:14.155073+00:00 app[web.1]: [0mGET / [36m304 [0m1.004 ms - -[0m
+2014-08-07T18:28:14.329161+00:00 app[web.1]: [0mGET / [36m304 [0m0.770 ms - -[0m
+2014-08-07T18:28:53.948012+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=7d572fdb-0ed1-42b0-a399-ad80249f59c6 fwd="173.252.77.115" dyno=web.1 connect=4ms service=28ms status=200 bytes=708
+2014-08-07T18:28:53.947977+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m24.281 ms - 6[0m
+2014-08-07T18:47:47.517676+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=eb6d86a7-e6e0-4db2-906c-8e97d435cf43 fwd="173.252.77.119" dyno=web.1 connect=1ms service=3ms status=200 bytes=966
+2014-08-07T18:47:47.520230+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m2.383 ms - 6[0m
+2014-08-07T18:47:54.016581+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=3ba0b27e-a388-495f-9e9f-8c65cac87788 fwd="173.252.69.117" dyno=web.1 connect=1ms service=3ms status=200 bytes=1022
+2014-08-07T18:47:54.018530+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.262 ms - 6[0m
+2014-08-07T18:52:51.556269+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=e9de42ad-c996-4da3-80cb-6e982170cb1f fwd="173.252.77.112" dyno=web.1 connect=3ms service=30000ms status=503 bytes=966
+2014-08-07T18:52:56.018473+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=29df68a3-3a9f-463c-81f6-6d2811310b19 fwd="173.252.69.115" dyno=web.1 connect=6ms service=30000ms status=503 bytes=1022
+2014-08-07T18:53:58.297543+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=8ccf095e-4353-4573-be8c-762dfd7cb837 fwd="173.252.77.117" dyno=web.1 connect=1ms service=30000ms status=503 bytes=762
+2014-08-07T18:54:03.908030+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=a0656dd6-6fdc-4b7c-8c81-77f838cf9c73 fwd="173.252.69.119" dyno=web.1 connect=2ms service=30001ms status=503 bytes=762
+2014-08-07T19:04:56.697087+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=1e46e75d-12a4-413c-ac16-f53b145dcf21 fwd="173.252.69.115" dyno=web.1 connect=4ms service=30004ms status=503 bytes=708
+2014-08-07T19:07:21.495609+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=c98356af-bcb3-4db1-ba52-9a554eeb851c fwd="173.252.69.113" dyno=web.1 connect=61ms service=30002ms status=503 bytes=709
+2014-08-07T19:07:44.069525+00:00 heroku[web.1]: State changed from up to starting
+2014-08-07T19:07:46.498196+00:00 heroku[web.1]: Starting process with command `coffee server.coffee`
+2014-08-07T19:07:50.320152+00:00 heroku[web.1]: Process exited with status 143
+2014-08-07T19:07:47.867159+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-08-07T19:07:50.771547+00:00 heroku[web.1]: State changed from starting to up
+2014-08-07T19:10:27.755092+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=f77aada3-e929-45ec-9107-2595af0f5d43 fwd="173.252.77.115" dyno=web.1 connect=22ms service=93ms status=200 bytes=710
+2014-08-07T19:10:27.755915+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m83.296 ms - 6[0m
+2014-08-07T19:18:34.406479+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=65520b28-7e9f-482b-88cc-e1459f14102b fwd="173.252.69.113" dyno=web.1 connect=3ms service=11ms status=200 bytes=1022
+2014-08-07T19:18:34.414777+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m16.017 ms - 6[0m
+2014-08-07T19:21:15.544241+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=ae10d0ce-8064-4997-90a5-ac589eca5242 fwd="173.252.69.112" dyno=web.1 connect=1ms service=5ms status=200 bytes=708
+2014-08-07T19:21:15.545521+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m3.571 ms - 6[0m
+2014-08-07T19:21:32.596398+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=482475f9-ce11-4900-8e52-d96e0f4e66ad fwd="173.252.69.116" dyno=web.1 connect=1ms service=7ms status=200 bytes=707
+2014-08-07T19:21:32.598259+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m3.772 ms - 6[0m
+2014-08-07T19:22:29.178357+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=00b8b19e-0ced-4b76-ab3d-c22f8e66d49a fwd="173.252.69.119" dyno=web.1 connect=0ms service=3ms status=200 bytes=966
+2014-08-07T19:22:29.181865+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m0.843 ms - 6[0m
+2014-08-07T19:22:32.087870+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=dd2370bc-7e17-4db8-9fb9-729d9588feb2 fwd="173.252.77.119" dyno=web.1 connect=0ms service=5ms status=200 bytes=966
+2014-08-07T19:22:32.088108+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m3.436 ms - 6[0m
+2014-08-07T19:47:34.230932+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=18145ec0-6ae7-4f0d-b26a-f806c388b9f8 fwd="173.252.69.113" dyno=web.1 connect=3ms service=12ms status=200 bytes=708
+2014-08-07T19:47:34.221070+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m7.131 ms - 6[0m
+2014-08-07T19:49:59.084961+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=56f4c22d-e8eb-43b0-85b0-7ad2d3f6244c fwd="173.252.69.116" dyno=web.1 connect=1ms service=12ms status=200 bytes=1022
+2014-08-07T19:49:59.077501+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m8.943 ms - 6[0m
+2014-08-07T19:50:08.937672+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=3fecd525-f3a9-4bc9-9d46-7e85cee8ff9b fwd="173.252.69.115" dyno=web.1 connect=34ms service=25ms status=200 bytes=967
+2014-08-07T19:50:08.903686+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m3.328 ms - 6[0m
+2014-08-07T20:03:53.491405+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=b8b53353-2ca5-4300-8dd0-22be169de759 fwd="173.252.77.117" dyno=web.1 connect=1ms service=6ms status=200 bytes=708
+2014-08-07T20:03:53.493280+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m2.250 ms - 6[0m
+2014-08-07T20:04:01.430043+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=f5e1e48a-031d-4d69-b835-ed1fc738cfcf fwd="173.252.77.116" dyno=web.1 connect=3ms service=4ms status=200 bytes=707
+2014-08-07T20:04:01.433340+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.943 ms - 6[0m
+2014-08-07T20:04:31.171979+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=1fbec7b5-ee18-4d39-aeae-17e7bee8df95 fwd="173.252.69.119" dyno=web.1 connect=1ms service=7ms status=200 bytes=966
+2014-08-07T20:04:31.166853+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.138 ms - 6[0m
+2014-08-07T20:21:58.609454+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=1c41543f-3d57-46b3-9bff-5cd9afbfcb08 fwd="173.252.77.117" dyno=web.1 connect=1ms service=11ms status=200 bytes=708
+2014-08-07T20:21:58.611124+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m7.081 ms - 6[0m
+2014-08-07T20:23:09.594084+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=f2dd70ea-1af7-4600-b33b-0925cb604812 fwd="173.252.69.115" dyno=web.1 connect=1ms service=4ms status=200 bytes=1022
+2014-08-07T20:23:09.594930+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m2.521 ms - 6[0m
+2014-08-07T20:23:15.460973+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=666be34d-fd1a-4506-8aba-53b1ee9fca4b fwd="173.252.69.115" dyno=web.1 connect=1ms service=3ms status=200 bytes=966
+2014-08-07T20:23:15.460306+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.634 ms - 6[0m
+2014-08-07T20:35:46.817848+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=b252b3ed-3ece-447e-89a3-739d31d869c5 fwd="173.252.69.119" dyno=web.1 connect=0ms service=6ms status=200 bytes=681
+2014-08-07T20:35:46.815776+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m3.554 ms - 6[0m
+2014-08-07T20:42:45.625282+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=2369e1a1-1a34-4e52-aa36-fee2770b646f fwd="173.252.69.115" dyno=web.1 connect=1ms service=19ms status=200 bytes=708
+2014-08-07T20:42:45.626317+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m13.284 ms - 6[0m
+2014-08-07T20:46:47.377961+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=d1874695-0a3c-4ac8-adc6-482a2860c26c fwd="173.252.77.112" dyno=web.1 connect=1ms service=10ms status=200 bytes=708
+2014-08-07T20:46:47.377900+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m6.956 ms - 6[0m
+2014-08-07T20:54:05.569118+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=225836c5-bb60-4313-88d7-c24acc8f05ba fwd="173.252.77.112" dyno=web.1 connect=1ms service=9ms status=200 bytes=708
+2014-08-07T20:54:05.570985+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m7.961 ms - 6[0m
+2014-08-07T20:56:15.297345+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=3be64f05-a18f-401f-832e-99e4e25f5ff1 fwd="173.252.69.115" dyno=web.1 connect=1ms service=30001ms status=503 bytes=708
+2014-08-07T21:03:23.114024+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=a76c0901-7f9a-4fb7-9224-2add982297f7 fwd="173.252.69.116" dyno=web.1 connect=0ms service=30001ms status=503 bytes=708
+2014-08-07T21:18:18.675428+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=435cdf0f-09f9-4b17-bf3c-cfa2be8b21d4 fwd="173.252.69.113" dyno=web.1 connect=2ms service=30000ms status=503 bytes=681
+2014-08-07T21:20:18.121217+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=fe776387-7120-4c7e-80c4-a9f2eeeb804b fwd="173.252.69.114" dyno=web.1 connect=3ms service=30015ms status=503 bytes=708
+2014-08-07T21:21:40.914481+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=31f74f6f-ed65-484d-b6b0-e589c654f578 fwd="173.252.69.119" dyno=web.1 connect=2ms service=30001ms status=503 bytes=708
+2014-08-07T21:35:24.604076+00:00 heroku[web.1]: State changed from up to starting
+2014-08-07T21:35:28.558109+00:00 heroku[web.1]: State changed from starting to up
+2014-08-07T21:35:29.600827+00:00 heroku[web.1]: Process exited with status 143
+2014-08-07T21:35:27.266619+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-08-07T21:35:26.399581+00:00 heroku[web.1]: Starting process with command `coffee server.coffee`
+2014-08-07T21:44:11.317844+00:00 heroku[web.1]: State changed from up to starting
+2014-08-07T21:44:14.632709+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-08-07T21:44:13.616947+00:00 heroku[web.1]: Starting process with command `coffee server.coffee`
+2014-08-07T21:44:16.994359+00:00 heroku[web.1]: State changed from starting to up
+2014-08-07T21:44:16.859511+00:00 heroku[web.1]: Process exited with status 143
+2014-08-07T21:44:24.561228+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=0e557f1a-662f-4b18-96a4-f48eb5bf9eac fwd="173.252.69.117" dyno=web.1 connect=1ms service=231ms status=200 bytes=708
+2014-08-07T21:44:24.567744+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m222.426 ms - 6[0m
+2014-08-07T21:52:43.712525+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=b0ab80d7-2721-4606-ba14-4ddc33cc2c61 fwd="173.252.77.119" dyno=web.1 connect=17ms service=8ms status=200 bytes=708
+2014-08-07T21:52:43.712242+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m4.083 ms - 6[0m
+2014-08-07T21:52:50.540966+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=dab4dca9-a377-4be9-b824-9b9fddbb4399 fwd="173.252.77.116" dyno=web.1 connect=1ms service=9ms status=200 bytes=701
+2014-08-07T21:52:50.540733+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m6.732 ms - 6[0m
+2014-08-07T22:07:42.853940+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=9212fe66-dc59-4b78-8527-433d49a24cc3 fwd="173.252.69.115" dyno=web.1 connect=1ms service=3ms status=200 bytes=966
+2014-08-07T22:07:42.852647+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.458 ms - 6[0m
+2014-08-07T22:07:44.575406+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=67e99de3-26eb-4f0c-9cf7-52dd96c3f23c fwd="173.252.69.118" dyno=web.1 connect=1ms service=4ms status=200 bytes=1438
+2014-08-07T22:07:44.574943+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.026 ms - 6[0m
+2014-08-07T22:07:46.255003+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=c540d24a-2cd6-4788-a529-60ef7b8d9bd4 fwd="173.252.77.113" dyno=web.1 connect=1ms service=9ms status=200 bytes=2327
+2014-08-07T22:07:46.252052+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.693 ms - 6[0m
+2014-08-07T22:07:50.782023+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=02bd90a7-8d46-49a0-afd8-5900744520d6 fwd="173.252.69.115" dyno=web.1 connect=1ms service=3ms status=200 bytes=762
+2014-08-07T22:07:50.781610+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.098 ms - 6[0m
+2014-08-07T22:07:51.175398+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=92ad7300-2751-4293-b66a-d76125d53d51 fwd="173.252.69.116" dyno=web.1 connect=2ms service=4ms status=200 bytes=1022
+2014-08-07T22:07:51.171497+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.362 ms - 6[0m
+2014-08-07T22:07:59.684433+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=91785404-dfee-4b4b-b14e-81db39557298 fwd="173.252.77.116" dyno=web.1 connect=2ms service=12ms status=200 bytes=762
+2014-08-07T22:07:59.687690+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m10.128 ms - 6[0m
+2014-08-07T22:23:29.046285+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=23d3bae1-3131-4c50-9d48-355bded81a4b fwd="173.252.69.118" dyno=web.1 connect=2ms service=10ms status=200 bytes=966
+2014-08-07T22:23:29.043362+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m0.930 ms - 6[0m
+2014-08-07T22:23:35.893934+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=70ff8082-cf75-4f6d-86d4-712b8e019b18 fwd="173.252.77.112" dyno=web.1 connect=1ms service=5ms status=200 bytes=1022
+2014-08-07T22:23:35.893123+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.107 ms - 6[0m
+2014-08-07T22:31:05.528591+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=9503a150-2f15-4141-ad4d-9d7612f9ad5b fwd="173.252.77.113" dyno=web.1 connect=1ms service=23ms status=200 bytes=762
+2014-08-07T22:31:05.524072+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m10.888 ms - 6[0m
+2014-08-07T22:31:09.761430+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=fb421e8c-dcf8-4483-8bd5-29b22bf05b25 fwd="173.252.69.119" dyno=web.1 connect=0ms service=1ms status=200 bytes=762
+2014-08-07T22:31:09.764258+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m0.933 ms - 6[0m
+2014-08-07T22:31:27.793574+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=f9fc6356-18ff-48d9-884e-430f795849e0 fwd="173.252.77.116" dyno=web.1 connect=2ms service=28ms status=200 bytes=1030
+2014-08-07T22:31:27.791677+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.009 ms - 6[0m
+2014-08-07T22:32:05+00:00 heroku[slug-compiler]: Slug compilation started
+2014-08-07T22:32:12.407017+00:00 heroku[api]: Deploy f7b36d4 by sparkboard@matt.is
+2014-08-07T22:32:12+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-08-07T22:32:12.659347+00:00 heroku[web.1]: State changed from up to starting
+2014-08-07T22:32:12.407191+00:00 heroku[api]: Release v8 created by sparkboard@matt.is
+2014-08-07T22:32:14.258167+00:00 heroku[web.1]: Starting process with command `coffee server.coffee`
+2014-08-07T22:32:15.912625+00:00 heroku[web.1]: State changed from starting to up
+2014-08-07T22:32:16.737852+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-08-07T22:32:19.083216+00:00 heroku[web.1]: Process exited with status 143
+2014-08-07T22:32:44.621634+00:00 heroku[router]: at=info method=GET path="/" host=internetmirror.herokuapp.com request_id=88d4ceec-13d2-4b90-afa1-d2b2e4dabd75 fwd="75.101.236.127" dyno=web.1 connect=1ms service=24ms status=200 bytes=402
+2014-08-07T22:32:44.625527+00:00 app[web.1]: [0mGET / [32m200 [0m13.370 ms - 22[0m
+2014-08-07T22:38:06.878499+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=64e76814-a2c7-414e-b06e-6969a21524d6 fwd="173.252.77.117" dyno=web.1 connect=0ms service=56ms status=200 bytes=704
+2014-08-07T22:38:06.876884+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m54.517 ms - 6[0m
+2014-08-07T22:38:50.209925+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=6a75857e-35df-427d-91e6-89b3b522a6ce fwd="173.252.69.113" dyno=web.1 connect=4ms service=7ms status=200 bytes=762
+2014-08-07T22:38:50.209484+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.656 ms - 6[0m
+2014-08-07T22:38:56.808378+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=b5d5fa42-a31d-438e-90e5-6849d8c50009 fwd="173.252.77.114" dyno=web.1 connect=1ms service=2ms status=200 bytes=762
+2014-08-07T22:38:56.810515+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m5.088 ms - 6[0m
+2014-08-07T22:45:27.084131+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=b49832af-3a16-400d-a294-7b0deb630ac2 fwd="173.252.77.117" dyno=web.1 connect=1ms service=9ms status=200 bytes=681
+2014-08-07T22:45:27.083466+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m7.146 ms - 6[0m
+2014-08-07T22:47:06.041070+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.578 ms - 6[0m
+2014-08-07T22:47:06.041817+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=ddafeea7-1bc1-4846-ba98-c9fe0a83eb3e fwd="173.252.77.117" dyno=web.1 connect=1ms service=3ms status=200 bytes=759
+2014-08-07T22:47:44.402724+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=8a0ef8c4-de85-464d-8ad0-908ae5ef5315 fwd="173.252.69.114" dyno=web.1 connect=4ms service=3ms status=200 bytes=740
+2014-08-07T22:47:44.401093+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.440 ms - 6[0m
+2014-08-07T22:48:33.865518+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=680bc48a-7b69-49a8-8f5b-e7b3be0a33a3 fwd="173.252.69.112" dyno=web.1 connect=1ms service=7ms status=200 bytes=762
+2014-08-07T22:48:33.865170+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.035 ms - 6[0m
+2014-08-07T22:49:15.266915+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=67021aec-c520-429a-b0a3-ca0e2d9e6d32 fwd="173.252.69.115" dyno=web.1 connect=1ms service=8ms status=200 bytes=759
+2014-08-07T22:49:15.264640+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.229 ms - 6[0m
+2014-08-07T22:49:19.965505+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=25735871-1617-4bce-b23c-30284f649876 fwd="173.252.77.118" dyno=web.1 connect=5ms service=3ms status=200 bytes=762
+2014-08-07T22:49:19.963526+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.694 ms - 6[0m
+2014-08-07T22:49:32.339835+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=262290d2-8b33-4604-8dad-e65f844dd5a2 fwd="173.252.77.116" dyno=web.1 connect=15ms service=17ms status=200 bytes=764
+2014-08-07T22:49:32.295514+00:00 app[web.1]:
+ [0mPOST /webhooks/page-feed [32m200 [0m0.941 ms - 6[0m
+2014-08-07T23:26:34.762876+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=dbfe0be9-ccc7-49a4-b1f1-aa849099f6a9 fwd="173.252.69.115" dyno=web.1 connect=37ms service=9ms status=200 bytes=709
+2014-08-07T23:26:34.759258+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m4.842 ms - 6[0m
+2014-08-07T23:31:22.073624+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=6e908c91-2216-467a-844f-5f2b40e7129f fwd="173.252.69.118" dyno=web.1 connect=1ms service=2ms status=200 bytes=1551
+2014-08-07T23:31:22.073476+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.287 ms - 6[0m
+2014-08-08T00:34:02.794329+00:00 heroku[web.1]: Idling
+2014-08-08T00:34:02.795156+00:00 heroku[web.1]: State changed from up to down
+2014-08-08T00:34:07.390065+00:00 heroku[web.1]: Process exited with status 143
+2014-08-08T00:34:05.512019+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-08-08T01:29:26+00:00 heroku[slug-compiler]: Slug compilation started
+2014-08-08T01:29:32+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-08-08T01:29:32.457795+00:00 heroku[api]: Deploy 9761af5 by sparkboard@matt.is
+2014-08-08T01:29:32.458806+00:00 heroku[api]: Release v9 created by sparkboard@matt.is
+2014-08-08T01:29:43.013180+00:00 heroku[web.1]: State changed from down to starting
+2014-08-08T01:29:43.013180+00:00 heroku[web.1]: Unidling
+2014-08-08T01:29:44.804964+00:00 heroku[web.1]: Starting process with command `coffee server.coffee`
+2014-08-08T01:29:46.527496+00:00 heroku[web.1]: State changed from starting to up
+2014-08-08T01:29:48.092233+00:00 heroku[router]: at=info method=GET path="/" host=internetmirror.herokuapp.com request_id=c550c2f7-3af3-4cb1-8095-f5228d56790d fwd="75.101.236.127" dyno=web.1 connect=1ms service=14ms status=200 bytes=405
+2014-08-08T01:29:48.089882+00:00 app[web.1]: [0mGET / [32m200 [0m6.023 ms - 22[0m
+2014-08-08T01:38:38.201470+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=68ef72e4-937c-4039-9837-1ab32f88612d fwd="173.252.77.116" dyno=web.1 connect=1ms service=43ms status=200 bytes=762
+2014-08-08T01:38:38.200722+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m41.009 ms - 6[0m
+2014-08-08T01:38:43.892516+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=6f2d6375-ae32-4848-8bec-46abf811cc1c fwd="173.252.69.116" dyno=web.1 connect=1ms service=5ms status=200 bytes=762
+2014-08-08T01:38:43.890097+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m2.497 ms - 6[0m
+2014-08-08T01:39:47.970940+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=2ad2e377-e187-477f-9120-fc0bdbf8add2 fwd="173.252.69.118" dyno=web.1 connect=1ms service=13ms status=200 bytes=708
+2014-08-08T01:39:47.969714+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m10.413 ms - 6[0m
+2014-08-08T01:43:48.628482+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=4514fb1c-1e9a-44e1-87e3-72f818cf9885 fwd="173.252.69.118" dyno=web.1 connect=6ms service=7ms status=200 bytes=966
+2014-08-08T01:43:48.622704+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m0.917 ms - 6[0m
+2014-08-08T01:49:35.498138+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=91e71d21-9f9d-4bac-bd86-2e8528a2bca2 fwd="173.252.77.117" dyno=web.1 connect=2ms service=5ms status=200 bytes=708
+2014-08-08T01:49:35.500572+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m2.773 ms - 6[0m
+2014-08-08T01:50:39.210278+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/" host=internetmirror.herokuapp.com request_id=711dc830-adff-4387-8a17-b51e35e7ed60 fwd="74.212.183.186" dyno=web.1 connect=1ms service=30001ms status=503 bytes=612
+2014-08-08T01:50:43.073446+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/" host=internetmirror.herokuapp.com request_id=fd83f5eb-4b4c-4e3e-b6f1-706069e4423f fwd="74.212.183.186" dyno=web.1 connect=0ms service=30001ms status=503 bytes=580
+2014-08-08T01:50:46.219347+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/" host=internetmirror.herokuapp.com request_id=d7b2509c-83c0-415e-b384-2f82f4c9bbd7 fwd="74.212.183.186" dyno=web.1 connect=0ms service=30000ms status=503 bytes=580
+2014-08-08T01:50:46.402206+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=ccb9dcb5-b990-47e0-b87e-540123354fc6 fwd="173.252.77.119" dyno=web.1 connect=1ms service=30000ms status=503 bytes=1495
+2014-08-08T01:50:54.026484+00:00 heroku[web.1]: State changed from up to starting
+2014-08-08T01:50:58.602671+00:00 heroku[web.1]: State changed from starting to up
+2014-08-08T01:50:57.777350+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-08-08T01:50:59.704418+00:00 heroku[web.1]: Process exited with status 143
+2014-08-08T01:50:56.041912+00:00 heroku[web.1]: Starting process with command `coffee server.coffee`
+2014-08-08T01:51:44.854685+00:00 heroku[router]: at=info method=GET path="/" host=internetmirror.herokuapp.com request_id=9c559f49-fdf2-49f5-8c99-6dc5ed5e4a63 fwd="74.212.183.186" dyno=web.1 connect=3ms service=12ms status=200 bytes=606
+2014-08-08T01:51:44.853764+00:00 app[web.1]: [0mGET / [32m200 [0m7.208 ms - 22[0m
+2014-08-08T01:54:52.351581+00:00 heroku[router]: at=info method=POST path="/" host=internetmirror.herokuapp.com request_id=bf3e25e7-dd99-4abc-8a90-71af5b4aa48b fwd="74.212.183.186" dyno=web.1 connect=1ms service=4ms status=200 bytes=391
+2014-08-08T01:54:52.354338+00:00 app[web.1]: [0mPOST / [32m200 [0m2.121 ms - 22[0m
+2014-08-08T01:55:32.784471+00:00 heroku[router]: at=info method=POST path="/" host=internetmirror.herokuapp.com request_id=7f730bf3-b878-44c2-a71c-20bd8344c980 fwd="54.83.124.227" dyno=web.1 connect=1ms service=24ms status=200 bytes=390
+2014-08-08T01:55:32.783891+00:00 app[web.1]: [0mPOST / [32m200 [0m1.151 ms - 22[0m
+2014-08-08T01:58:31.434568+00:00 heroku[router]: at=info method=POST path="/" host=internetmirror.herokuapp.com request_id=46c8c3b3-35c6-4a1e-81b4-a5ff103275db fwd="54.83.124.227" dyno=web.1 connect=1ms service=2ms status=200 bytes=390
+2014-08-08T01:58:31.434707+00:00 app[web.1]: [0mPOST / [32m200 [0m0.678 ms - 22[0m
+2014-08-08T02:01:31.775305+00:00 heroku[router]: at=info method=POST path="/" host=internetmirror.herokuapp.com request_id=15d0fd34-789c-466b-a1ea-244027b4f2fd fwd="54.83.124.227" dyno=web.1 connect=0ms service=2ms status=200 bytes=390
+2014-08-08T02:01:31.777440+00:00 app[web.1]: [0mPOST / [32m200 [0m0.583 ms - 22[0m
+2014-08-08T02:04:31.571873+00:00 heroku[router]: at=info method=POST path="/" host=internetmirror.herokuapp.com request_id=b57ec83e-70df-4023-9821-1a811e7e4fc0 fwd="54.83.124.227" dyno=web.1 connect=1ms service=12ms status=200 bytes=390
+2014-08-08T02:04:31.569824+00:00 app[web.1]: [0mPOST / [32m200 [0m0.614 ms - 22[0m
+2014-08-08T02:07:31.582566+00:00 heroku[router]: at=info method=POST path="/" host=internetmirror.herokuapp.com request_id=5a353141-5a7a-4cbe-ba68-8f022c353708 fwd="54.83.124.227" dyno=web.1 connect=1ms service=3ms status=200 bytes=390
+2014-08-08T02:07:31.582119+00:00 app[web.1]: [0mPOST / [32m200 [0m0.576 ms - 22[0m
+2014-08-08T02:10:31.602413+00:00 heroku[router]: at=info method=POST path="/" host=internetmirror.herokuapp.com request_id=39b19f51-70dc-4e09-80d5-c523c86ac188 fwd="54.83.124.227" dyno=web.1 connect=1ms service=3ms status=200 bytes=390
+2014-08-08T02:10:31.603331+00:00 app[web.1]: [0mPOST / [32m200 [0m1.479 ms - 22[0m
+2014-08-08T02:14:01.644519+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/" host=internetmirror.herokuapp.com request_id=71011540-4ed7-4c9c-ab6d-347cd25e26fe fwd="54.83.124.227" dyno=web.1 connect=1ms service=30001ms status=503 bytes=390
+2014-08-08T02:17:01.669632+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/" host=internetmirror.herokuapp.com request_id=53c115ff-e438-4a4d-a49c-34ff3fd05e3d fwd="54.83.124.227" dyno=web.1 connect=2ms service=30000ms status=503 bytes=390
+2014-08-08T02:20:01.716594+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/" host=internetmirror.herokuapp.com request_id=41dc800b-1f94-4379-be9f-bf55a7d19e19 fwd="54.83.124.227" dyno=web.1 connect=0ms service=30001ms status=503 bytes=390
+2014-08-08T02:23:01.747417+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/" host=internetmirror.herokuapp.com request_id=3b70f8db-158f-4a5b-898b-06fab0786369 fwd="54.83.124.227" dyno=web.1 connect=1ms service=30001ms status=503 bytes=390
+2014-08-08T03:12:53.063148+00:00 heroku[web.1]: State changed from up to down
+2014-08-08T03:12:53.061624+00:00 heroku[web.1]: Idling
+2014-08-08T03:12:57.478457+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-08-08T03:12:59.983582+00:00 heroku[web.1]: Process exited with status 143
+2014-08-08T05:10:21.859601+00:00 heroku[web.1]: Unidling
+2014-08-08T05:10:21.861196+00:00 heroku[web.1]: State changed from down to starting
+2014-08-08T05:10:23.798436+00:00 heroku[web.1]: Starting process with command `coffee server.coffee`
+2014-08-08T05:10:27.001881+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=22e08cbf-e438-42c7-b2c2-9c7eb9c02166 fwd="173.252.69.116" dyno=web.1 connect=1ms service=73ms status=200 bytes=675
+2014-08-08T05:10:27.002755+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m67.427 ms - 6[0m
+2014-08-08T05:10:26.474713+00:00 heroku[web.1]: State changed from starting to up
+2014-08-08T05:29:37.222522+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/" host=internetmirror.herokuapp.com request_id=a5d1631d-5140-4e24-90a0-05309994a9d3 fwd="76.126.57.80" dyno=web.1 connect=2ms service=30001ms status=503 bytes=1087
+2014-08-08T05:54:40.104467+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=a2cd10d6-df83-4f3e-b0c4-9a6d546f26ed fwd="173.252.69.117" dyno=web.1 connect=0ms service=30001ms status=503 bytes=705
+2014-08-08T06:09:47.062381+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/" host=internetmirror.herokuapp.com request_id=33392856-4ccf-48cf-9daf-aedfc4e1f807 fwd="54.198.76.47" dyno=web.1 connect=2ms service=30001ms status=503 bytes=389
+2014-08-08T06:09:54.044539+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/" host=internetmirror.herokuapp.com request_id=38ab9b4b-3b32-46ea-8556-3fa9e842e5f3 fwd="54.90.116.134" dyno=web.1 connect=1ms service=30001ms status=503 bytes=390
+2014-08-08T06:10:41.473371+00:00 heroku[web.1]: State changed from up to starting
+2014-08-08T06:10:44.795490+00:00 heroku[web.1]: State changed from starting to up
+2014-08-08T06:10:43.107884+00:00 heroku[web.1]: Starting process with command `coffee server.coffee`
+2014-08-08T06:10:44.379275+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-08-08T06:10:46.228424+00:00 heroku[web.1]: Process exited with status 143
+2014-08-08T06:12:23.276600+00:00 heroku[router]: at=info method=POST path="/" host=internetmirror.herokuapp.com request_id=dd535444-995d-4a02-8f2c-6ff1d9563c65 fwd="54.90.116.134" dyno=web.1 connect=1ms service=14ms status=200 bytes=390
+2014-08-08T06:12:23.279146+00:00 app[web.1]: [0mPOST / [32m200 [0m9.286 ms - 22[0m
+2014-08-08T06:15:23.276813+00:00 heroku[router]: at=info method=POST path="/" host=internetmirror.herokuapp.com request_id=622ae142-d617-4705-833f-a01a9f4dd2fd fwd="54.90.116.134" dyno=web.1 connect=1ms service=3ms status=200 bytes=390
+2014-08-08T06:15:23.275377+00:00 app[web.1]: [0mPOST / [32m200 [0m1.725 ms - 22[0m
+2014-08-08T06:18:23.318695+00:00 heroku[router]: at=info method=POST path="/" host=internetmirror.herokuapp.com request_id=1f843c92-f2a2-440f-9f1c-8caf6dcb8927 fwd="54.90.116.134" dyno=web.1 connect=2ms service=2ms status=200 bytes=390
+2014-08-08T06:18:23.321502+00:00 app[web.1]: [0mPOST / [32m200 [0m1.198 ms - 22[0m
+2014-08-08T06:21:23.363576+00:00 heroku[router]: at=info method=POST path="/" host=internetmirror.herokuapp.com request_id=c8df0159-5990-4229-aefd-2b1eb203841e fwd="54.90.116.134" dyno=web.1 connect=2ms service=2ms status=200 bytes=390
+2014-08-08T06:21:23.361969+00:00 app[web.1]: [0mPOST / [32m200 [0m0.865 ms - 22[0m
+2014-08-08T06:23:57.593647+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=0139d087-5891-42fa-8e76-f3778fb6bf14 fwd="173.252.77.114" dyno=web.1 connect=1ms service=27ms status=200 bytes=681
+2014-08-08T06:23:57.593468+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m25.043 ms - 6[0m
+2014-08-08T06:24:03.860538+00:00 heroku[router]: at=info method=POST path="/" host=internetmirror.herokuapp.com request_id=ad174260-eac2-499b-91e9-42ad3934aa1d fwd="54.90.75.184" dyno=web.1 connect=2ms service=3ms status=200 bytes=389
+2014-08-08T06:24:03.859493+00:00 app[web.1]: [0mPOST / [32m200 [0m0.629 ms - 22[0m
+2014-08-08T06:25:35.712428+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=46f67e03-06de-49c5-8c50-0a63612aea2c fwd="173.252.77.115" dyno=web.1 connect=1ms service=5ms status=200 bytes=756
+2014-08-08T06:25:35.711791+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m2.146 ms - 6[0m
+2014-08-08T06:25:45.147608+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=2a9b444d-d5ab-4d15-9ed2-234da807488a fwd="173.252.77.116" dyno=web.1 connect=1ms service=2ms status=200 bytes=759
+2014-08-08T06:25:45.148449+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m0.988 ms - 6[0m
+2014-08-08T06:27:03.104600+00:00 heroku[router]: at=info method=POST path="/" host=internetmirror.herokuapp.com request_id=0dcf660f-8005-45f0-9b09-dac488b51161 fwd="54.90.75.184" dyno=web.1 connect=1ms service=1ms status=200 bytes=389
+2014-08-08T06:27:03.106568+00:00 app[web.1]: [0mPOST / [32m200 [0m0.843 ms - 22[0m
+2014-08-08T06:27:24.231373+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=03bddc49-ca8a-48da-8ed7-856d4967fd93 fwd="173.252.77.117" dyno=web.1 connect=1ms service=8ms status=200 bytes=708
+2014-08-08T06:27:24.232318+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m4.684 ms - 6[0m
+2014-08-08T06:28:21.817685+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=4833e796-7aa1-45e4-b65b-54141f95ad90 fwd="173.252.77.112" dyno=web.1 connect=2ms service=7ms status=200 bytes=966
+2014-08-08T06:28:21.814122+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m2.067 ms - 6[0m
+2014-08-08T06:28:29.180215+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=f60cdaa7-c50c-4721-8a1e-2e325a17567c fwd="173.252.69.117" dyno=web.1 connect=1ms service=3ms status=200 bytes=966
+2014-08-08T06:28:29.181840+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.726 ms - 6[0m
+2014-08-08T06:28:44.321412+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=e9d5e319-331e-433b-a4dd-dbdd77a74085 fwd="173.252.77.112" dyno=web.1 connect=2ms service=4ms status=200 bytes=759
+2014-08-08T06:28:44.320532+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.988 ms - 6[0m
+2014-08-08T06:29:12.408022+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=551779cc-fb56-409f-8907-e599cb989ea9 fwd="173.252.77.116" dyno=web.1 connect=0ms service=2ms status=200 bytes=759
+2014-08-08T06:29:12.411183+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m1.993 ms - 
+6[0m
+2014-08-08T06:30:03.131900+00:00 heroku[router]: at=info method=POST path="/" host=internetmirror.herokuapp.com request_id=ba3c6532-2bab-42f3-aad5-948d99af3a3a fwd="54.90.75.184" dyno=web.1 connect=10ms service=8ms status=200 bytes=390
+2014-08-08T06:30:03.125573+00:00 app[web.1]: [0mPOST / [32m200 [0m0.738 ms - 22[0m
+2014-08-08T06:30:28.804156+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=b2a842fb-1189-4b73-a17c-2f13b7bc9fa5 fwd="173.252.69.113" dyno=web.1 connect=0ms service=3ms status=200 bytes=756
+2014-08-08T06:30:28.804579+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m0.922 ms - 6[0m
+2014-08-08T06:31:54.964578+00:00 heroku[router]: at=info method=POST path="/webhooks/page-feed" host=internetmirror.herokuapp.com request_id=09e7e63a-a8a4-41ff-8d97-87bc6d0956b0 fwd="173.252.69.115" dyno=web.1 connect=1ms service=21ms status=200 bytes=756
+2014-08-08T06:31:54.963528+00:00 app[web.1]: [0mPOST /webhooks/page-feed [32m200 [0m14.668 ms - 6[0m
+2014-08-08T06:33:03.103052+00:00 heroku[router]: at=info method=POST path="/" host=internetmirror.herokuapp.com request_id=da740feb-a045-442c-9b19-39e619a0d59c fwd="54.90.75.184" dyno=web.1 connect=1ms service=1ms status=200 bytes=389
+2014-08-08T06:33:03.103314+00:00 app[web.1]: [0mPOST / [32m200 [0m0.730 ms - 22[0m
+2014-08-08T06:36:03.110002+00:00 heroku[router]: at=info method=POST path="/" host=internetmirror.herokuapp.com request_id=2df98e81-911f-4c76-b0a4-33477e573f41 fwd="54.90.75.184" dyno=web.1 connect=1ms service=2ms status=200 bytes=389
+2014-08-08T06:36:03.110702+00:00 app[web.1]: [0mPOST / [32m200 [0m0.720 ms - 22[0m
