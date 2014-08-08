@@ -7,7 +7,8 @@ methodOverride = require("method-override")
 {flatten} = require("./utils")
 morgan = require("morgan")
 _ = require("underscore")
-require("./ping")
+
+require("./heartbeat")
 
 # For process.env variables with a REPL:
 # env = require('node-env-file')
