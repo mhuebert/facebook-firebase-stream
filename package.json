@@ -20,6 +20,7 @@
     "morgan": "^1.2.2",
     "method-override": "^2.1.2",
     "restler": "^3.2.2",
-    "moment": "^2.8.1"
+    "moment": "^2.8.1",
+    "heroku-client": "^1.5.0"
   }
 }

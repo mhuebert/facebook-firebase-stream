@@ -17,5 +17,5 @@ heartbeat = ->
   r.on "error", (err, response) -> 
     console.log "Image server down", err
 
-setInterval heartbeat, 30*1000
+setInterval heartbeat, 20*1000
 heartbeat()
