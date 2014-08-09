@@ -4,18 +4,21 @@ rest = require("restler")
 ref = new Firebase(process.env.fire_url)
 ref.auth(process.env.firebase_secret)
 
-heartbeat = ->
-  time = moment(time).format('MMMM Do YYYY, h:mm:ss a')
-  ref.child("heartbeat/facebook-events").set time, ->
-    console.log "Tick, #{time}"
-  r = rest.get process.env.image_server_url
-  
-  r.on "success", (result, response) ->
+ref.child("heartbeat").on "value", -> 
 
+time = -> moment().format('MMMM Do YYYY, h:mm:ss a')
+
+setInterval ->
+  ref.child("heartbeat/#{process.env.other_app}").set time()
+, 1000
+
+setInterval ->
+  r = rest.get process.env.image_server_url
+  r.on "success", (result, response) ->
   r.on "fail", -> handleFail
   r.on "error", -> handleFail
+, 50*1000
 
-handleFail = -> console.log "Image server down"
-
-setInterval heartbeat, 20*1000
-heartbeat()
+handleFail = -> 
+  console.log "Image server down"
+  ref.child("heartbeat/#{process.env.other_app}").set time()
