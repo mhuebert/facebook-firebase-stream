@@ -1,3 +1,8 @@
+if process.env.NODETIME_ACCOUNT_KEY
+  require("nodetime").profile
+    accountKey: process.env.NODETIME_ACCOUNT_KEY
+
+
 express = require("express")
 Firebase = require("firebase")
 hash = require('object-hash')
