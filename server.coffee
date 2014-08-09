@@ -52,5 +52,5 @@ app.get "/webhooks/page-feed", (req, res) ->
 app.all "/", (req, res) ->
   res.status(200).send "<h1>Hello, world.</h1>"
 
-app.listen(process.env.PORT || 3000)
+app.listen process.env.PORT, -> console.log "listening on #{process.env.PORT}"
 
