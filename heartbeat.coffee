@@ -1,5 +1,6 @@
 Firebase = require("firebase")
 moment = require("moment")
+rest = require("restler")
 ref = new Firebase(process.env.fire_url)
 ref.auth(process.env.firebase_secret)
 
@@ -7,6 +8,14 @@ heartbeat = ->
   time = moment(time).format('MMMM Do YYYY, h:mm:ss a')
   ref.child("heartbeat/facebook-events").set time, ->
     console.log "Tick, #{time}"
+  r = rest.post process.env.image_server_url
+  
+  r.on "success", (result, response) ->
+
+  r.on "fail", (data, response) -> 
+    console.log "Image server down"
+  r.on "error", (err, response) -> 
+    console.log "Image server down"    
     
 setInterval heartbeat, 30*1000
 
