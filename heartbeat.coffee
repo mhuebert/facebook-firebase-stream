@@ -15,6 +15,10 @@ new Cron '* * * * * *', ->
   ref.child("heartbeat/#{process.env.other_app}").set time()
 , null, true
 
+setTimeout ->
+  console.log "in timeout"
+, 1000
+
 # new Cron '30 * * * * *', ->
 #   r = rest.get "https://#{process.env.other_app}.herokuapp.com"
 #   r.on "success", (result, response) -> console.log "#{process.env.other_app} is up"
