@@ -15,7 +15,7 @@ new Cron '* * * * * *', ->
   ref.child("heartbeat/#{process.env.other_app}").set time()
 , null, true
 
-setTimeout ->
+setInterval ->
   console.log "in timeout"
 , 1000
 
