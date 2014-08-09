@@ -12,7 +12,7 @@ Cron = require("cron").CronJob
 
 new Cron '* * * * * *', ->
   console.log "in cron", time()
-  ref.child("heartbeat/#{process.env.other_app}").set time()
+  ref.child("heartbeat/internetmirror").set time()
 , null, true
 
 setInterval ->
