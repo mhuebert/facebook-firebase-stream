@@ -21,6 +21,7 @@
     "method-override": "^2.1.2",
     "restler": "^3.2.2",
     "moment": "^2.8.1",
-    "heroku-client": "^1.5.0"
+    "heroku-client": "^1.5.0",
+    "cron": "^1.0.4"
   }
 }

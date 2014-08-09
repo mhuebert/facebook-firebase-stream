@@ -8,17 +8,19 @@ ref.child("heartbeat").on "value", ->
 
 time = -> moment().format('MMMM Do YYYY, h:mm:ss a')
 
-setInterval ->
-  ref.child("heartbeat/#{process.env.other_app}").set time()
-, 1000
+Cron = require("cron").CronJob
 
-setInterval ->
+new Cron '* * * * * *', ->
+  ref.child("heartbeat/#{process.env.other_app}").set time()
+, null, true
+
+new Cron '40 * * * * *', ->
   r = rest.get process.env.image_server_url
   r.on "success", (result, response) ->
   r.on "fail", -> handleFail
   r.on "error", -> handleFail
-, 50*1000
+, null, true
 
 handleFail = -> 
   console.log "Image server down"
-  ref.child("heartbeat/#{process.env.other_app}").set time()
+  ref.child("heartbeat/#{process.env.other_app}-down").set time()
