@@ -15,12 +15,12 @@ new Cron '* * * * * *', ->
 , null, true
 
 new Cron '40 * * * * *', ->
-  r = rest.get process.env.image_server_url
+  r = rest.get "https://#{process.env.other_app}.herokuapp.com"
   r.on "success", (result, response) ->
   r.on "fail", -> handleFail
   r.on "error", -> handleFail
 , null, true
 
 handleFail = -> 
-  console.log "Image server down"
+  console.log "#{process.env.other_app} is down"
   ref.child("heartbeat/#{process.env.other_app}-down").set time()
