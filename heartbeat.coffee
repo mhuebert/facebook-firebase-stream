@@ -12,10 +12,10 @@ heartbeat = ->
   
   r.on "success", (result, response) ->
 
-  r.on "fail", (data, response) -> 
-    console.log "Image server down", data
-  r.on "error", (err, response) -> 
-    console.log "Image server down", err
+  r.on "fail", -> handleFail
+  r.on "error", -> handleFail
+
+handleFail = -> console.log "Image server down"
 
 setInterval heartbeat, 20*1000
 heartbeat()
